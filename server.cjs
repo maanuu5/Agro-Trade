@@ -4,12 +4,11 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const port = 4000;
 
 app.use(cors());
 app.use(express.json());
 
-const CROPS_FILE = path.resolve(__dirname, 'data/crops.json');
+const CROPS_FILE = path.resolve(__dirname, 'src/data/crops.json');
 
 app.post('/api/crops/add', (req, res) => {
   try {
@@ -141,6 +140,4 @@ app.post('/api/crops/end', (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
-});
+module.exports = app;
