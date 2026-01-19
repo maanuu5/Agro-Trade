@@ -78,7 +78,7 @@
     "location": "423",
     "farmerId": "FARMER001",
     "farmerName": "Unknown Farmer",
-    "status": "active",
+    "status": "closed",
     "bids": [],
     "createdAt": "2026-01-19T11:46:41.288Z"
   }

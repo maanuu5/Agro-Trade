@@ -49,6 +49,13 @@ const TraderLogin = () => {
           <p className="text-gray-600 mt-2">Welcome back! Please enter your details</p>
         </div>
 
+        {/* Demo Credentials */}
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-6 text-sm">
+          <div className="text-blue-700 font-medium mb-1">Demo Credentials:</div>
+          <div><strong>ID:</strong> TRADER001</div>
+          <div><strong>Password:</strong> trader123</div>
+        </div>
+
         {error && (
           <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
             {error}
